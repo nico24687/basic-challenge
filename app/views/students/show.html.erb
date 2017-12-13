@@ -5,7 +5,7 @@
 
 <%= @student.name %>
 
-<h1>Address details below</h1>
+<h1>All address details below</h1>
 
 <% @student.addresses.each do |detail| %>
   <p>Description :<%= detail.description %></p>
@@ -13,4 +13,5 @@
   <p>City: <%= detail.city %></p>
   <p>State: <%= detail.state %></p>
   <p>Zipcode: <%= detail.zipcode %></p>
+  <p>---------------------------------------------</p>
 <%end %>
