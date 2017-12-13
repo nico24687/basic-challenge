@@ -3,5 +3,5 @@
 <%= link_to "Create new student", new_student_path %>
 
 <% @students.each do |student| %>
-  <p><%= student.name %> <%= link_to "Delete", student_path(student), method: :delete %></p>
+  <p><%= link_to student.name,student_path(student)  %> <%= link_to "Delete", student_path(student), method: :delete %></p>
 <% end %>
