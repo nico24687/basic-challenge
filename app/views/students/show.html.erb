@@ -4,3 +4,13 @@
 
 
 <%= @student.name %>
+
+<h1>Address details below</h1>
+
+<% @student.addresses.each do |detail| %>
+  <p>Description :<%= detail.description %></p>
+  <p>Street: <%= detail.street %></p>
+  <p>City: <%= detail.city %></p>
+  <p>State: <%= detail.state %></p>
+  <p>Zipcode: <%= detail.zipcode %></p>
+<%end %>
