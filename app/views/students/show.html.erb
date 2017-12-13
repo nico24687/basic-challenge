@@ -17,3 +17,7 @@
 <%end %>
 
 <h1>Courses this student is taking</h1>
+
+<% @student.courses.each do |course |%>
+  <p><%= course.title %></p>
+<% end %>
